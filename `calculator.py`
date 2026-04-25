@@ -1,0 +1,49 @@
+# ================================================
+# PYTHON CALCULATOR v1.0 - cyberbyte26
+# Proyek #2: Belajar-TI | github.com/cyberbyte26/Belajar-TI
+# Features: Interactive, Error Handling, Unlimited Use
+# ================================================
+
+def calculator():
+    print("\n" + "="*50)
+    print("🔢 CALCULATOR PROFESSIONAL by cyberbyte26")
+    print("="*50)
+    
+    try:
+        print("Contoh: 10 + 5, 20 - 8, 6 * 7, 15 / 3")
+        num1 = float(input("📥 Angka pertama: "))
+        operasi = input("📥 Operasi (+, -, *, /): ")
+        num2 = float(input("📥 Angka kedua: "))
+        
+        if operasi == '+':
+            hasil = num1 + num2
+        elif operasi == '-':
+            hasil = num1 - num2
+        elif operasi == '*':
+            hasil = num1 * num2
+        elif operasi == '/':
+            if num2 == 0:
+                print("❌ ERROR: Tidak bisa bagi nol!")
+                return
+            hasil = num1 / num2
+        else:
+            print("❌ ERROR: Operasi hanya +, -, *, /")
+            return
+            
+        print(f"\n✅ RESULT: {num1} {operasi} {num2} = **{hasil}**")
+        print("🎉 Calculation successful!")
+        
+    except ValueError:
+        print("❌ ERROR: Masukkan angka yang valid!")
+
+# MAIN PROGRAM
+print("👋 Selamat datang di Calculator cyberbyte26!")
+print("Portfolio: github.com/cyberbyte26/Belajar-TI\n")
+
+while True:
+    calculator()
+    ulang = input("\n🔄 Hitung lagi? (y/n): ").lower()
+    if ulang != 'y':
+        print("\n⭐ Thanks for using cyberbyte26 Calculator!")
+        print("📚 Next project: Web Development")
+        break
