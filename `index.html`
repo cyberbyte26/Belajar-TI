@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyberbyte26 - TI Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .header h1 { font-size: 3em; margin: 0; }
+        .projects { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; }
+        .project-card { background: white; color: #333; margin: 20px 0; padding: 20px; border-radius: 10px; }
+        .btn { background: #ff6b6b; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>👋 Hi, I'm cyberbyte26</h1>
+        <h2>S1 TI 2024 | Full-Stack Developer</h2>
+        <p>Learning Python, Web Dev, & Database in Public!</p>
+    </div>
+
+    <div class="projects">
+        <h2>📁 My Projects</h2>
+        
+        <div class="project-card">
+            <h3>🔢 Interactive Calculator</h3>
+            <p>Python app dengan error handling & unlimited calculations</p>
+            <a href="calculator.py" class="btn">View Code</a>
+        </div>
+        
+        <div class="project-card">
+            <h3>🐍 Hello World</h3>
+            <p>First Python script - GitHub journey start!</p>
+            <a href="hello.py" class="btn">View Code</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 40px;">
+        <p>⭐ <a href="https://github.com/cyberbyte26/Belajar-TI">Star my repo!</a> | 
+        🚀 Made with ❤️ in Indonesia</p>
+    </footer>
+</body>
+</html>
